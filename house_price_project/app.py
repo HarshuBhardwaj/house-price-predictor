@@ -6,10 +6,14 @@ import pickle
 # Load Model and Scaler
 # -----------------------------
 
-with open("house_price_model.pkl", "rb") as file:
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(BASE_DIR, "house_price_model.pkl"), "rb") as file:
     model = pickle.load(file)
 
-with open("scaler.pkl", "rb") as file:
+with open(os.path.join(BASE_DIR, "scaler.pkl"), "rb") as file:
     scaler = pickle.load(file)
 
 
