@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 import pickle
-
+import os
 # -----------------------------
 # Load Model and Scaler
 # -----------------------------
 
-import os
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
